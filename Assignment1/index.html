@@ -2,90 +2,115 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-</head>
 
-<body>
-    <header>
-        <h1>Taranpreet Kaur</h1>
+    <meta charset="utf=8">>
+    <meta name="viewport" content="widht= device-widht", initial scale="1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id=" top">
+    
+    <!-- Navigation Bar -->
+     <header>
+        <h1>My Portfolio</h1>
         <nav>
             <a href="#about">About</a>
-            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Skills</a>
             <a href="#contact">Contact</a>
         </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Welcome to my Portfolio</h2>
-            <p>Hello! I am a web devlopment student.This is my personal portfolio website.</p>
-        </section>
-        <section id="about">
-            <h2>About Me</h2>
-            <img src="/Assignment1/image/profile.jpeg" alt="profile photo of Taranpreet Kaur" width="200">
-            <p>
-                I am passionate about learning web devlopment and building creative projects.
-            </p>
+     </header>
 
-        </section>
-        <section id="projects">
-            <h2>My Projects</h2>
-            <ul>
-                <li><strong>Portfolio Website</strong>:A personal one-page website to showcase your bio, skills, and
-                    contact details</li>
-                <li><strong>User Form</strong>:A creative greeting with fields like name, email, and messagefor
-                    practicing form handling.</li>
-            </ul>
-        </section>
-        <section id="skills">
+     <!-- About Section -->
+      <section id="about">
+        <h2>About Section</h2>
+        <img src="image/profile.jpeg" alt="Profile photo" class="profile Image"
+        width="200px" height="200px">
+        <p>Hello! My name is Taranpreet Kaur.I am learning web devlopment and this is my first portfolio website.</p>
+        
+      </section>
+      <hr>
+      <!-- Skills Section -->
+       <section id="skills">
+        <h2>My Skills</h2>
+        <table>
+            <tr>
+                <th>Skill</th>
+                <th>Level</th>
+                
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Beginner</td>
 
-            <h2>Technical Skills</h2>
-            <table border="1" cellpadding="10" cellspacing="5">
-                <tr>
-                    <th>Skill</th>
-                    <th>Level</th>
-                </tr>
-                <tr>
-                    <td>HTML</td>
-                    <td>Beginner</td>
-                </tr>
-
-                <tr>
-                    <td>CSS</td>
-                    <td>Beginner</td>
-                </tr>
-                <tr>
-                    <td>Javascript</td>
-                    <td>Learning</td>
-                </tr>
-            </table>
-
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form>
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Enter your name" required>
-                <br>
-                <br>
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Enter your email" required>
-                <br>
-                <br>
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-                <br>
-                <br>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-        <footer>
-            <p>&copy; 2026 Taranpreet Kaur. All rights reserved.</p>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Beginner</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>learning</td>
+            </tr>
             
-        </footer>
+        </table>
+       </section>
+       <hr>
+       <!-- Project Section -->
+        <section id="projects">
+            <h2>My Project</h2>
 
-    </main>
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>A simple HTML and CSS website</p>
+             </div>
+
+             <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Another mini project</p>
+
+             </div>
+        </section>
+        <hr>
+        <!-- Contact Section -->
+         <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="get">
+                <table class="contact-table">
+                    <tr>
+                        <td >
+                            <label for="name">Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable for="email">Email:</lable>
+                        </td>
+                        <td>
+                            <input type="email" id="email" name="email" placeholder="abc123@gmail.com" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable for="message">Message:</lable>
+                        </td>
+                        <td>
+                            <textarea id="meassage" name="message" placeholder="Write your message" required></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit">Send</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+         </section>
+         <footer>
+            <p>2026 MY PORTFOLIO</p>
+         </footer>
 </body>
-
 </html>
